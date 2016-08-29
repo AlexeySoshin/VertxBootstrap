@@ -1,0 +1,20 @@
+group 'com.alexeysoshin'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+version = '3.3.2'
+dependencies {
+    compile "io.vertx:vertx-core:$version"
+    compile "io.vertx:vertx-web:$version"
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+mainClassName = "Main"
